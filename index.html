@@ -9,11 +9,64 @@
 <style>
 body,h3,h4,h5 {font-family: "Raleway", sans-serif}
 h1,h2 {font-family: 'Playfair Display', serif;}
-.w3-third img{margin-bottom: -6px; opacity: 1; cursor: pointer; padding: 10px;}
-.w3-third img:hover{opacity: .8}
-    iframe {
-    display:block;
-    width:100%;
+
+}
+* {box-sizing: border-box}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+}
+
+/* Make the image to responsive */
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  height: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 15px;
+  padding: 20px;
+  text-align: center;
+    
+        display: -ms-flexbox;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+
+    /* Firefox */
+    display: -moz-box;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+
+    /* Safari, Opera, and Chrome */
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+
+    /* W3C */
+    display: box;
+    box-pack: center;
+    box-align: center;
+}
+
+
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+  opacity: 1;
 }
 </style></head>
 <body class="w3-content" style="max-width:1600px; background-color: #ffffe6">
@@ -48,29 +101,64 @@ h1,h2 {font-family: 'Playfair Display', serif;}
   <!-- Photo grid -->
   <div class="w3-row" style="background-color: #ffffe6"> 
     <div class="w3-third">
-      
-        <a href="lavoyger.html"><img src="images/lavoyger.jpg" style="width:100%" alt="Lavoyger quail hunting"></a>
-        <center><i>Lavoyger</i> directed by Rachel Bardin</center>
         
-     <a href="http://miralj.com/badthings/index.html"; target="_blank"><img src="images/BadThings.jpg" style="width:100%" alt="Bad Things directed by Mira Lippold Johnson"> </a> <center><i>Bad Things</i> directed by Mira Lippold Johnson</center>
+      <a href="lavoyger.html">  
+          <div class="container">
+  <img src="images/lavoyger750.jpg" style="width:100%" alt="Lavoyger quail hunting">
+            <div class="overlay";>LAVOYGER <br>Directed by Rachel Bardin</div>
+          </div> </a>
         
-     <a href="https://www.huaylaw.com/"; target="_blank"> <img src="images/aswego.jpg" style="width:100%" onclick="onClick(this)" alt="As We Go directed by Huay-Bing Law"></a> <center><i>As We Go</i> directed by Huay-Bing Law</center>
+     <a href="http://miralj.com/badthings/index.html"; target="_blank">
+         <div class="container">
+         <img src="images/BadThings750.jpg" style="width:100%" alt="Bad Things directed by Mira Lippold-Johnson">
+             <div class="overlay";>BAD THINGS <br>Directed by Mira Lippold-Johnson</div> </div>
+             </a> 
+        
+     <a href="https://www.huaylaw.com/"; target="_blank">
+         <div class="container">
+         <img src="images/aswego750.jpg" style="width:100%" onclick="onClick(this)" alt="As We Go directed by Huay-Bing Law">
+             <div class="overlay";>AS WE GO <br>Directed by Huay-Bing Law</div> </div>
+             </a>
     </div>
 
     <div class="w3-third">
-        <a href="https://www.pbs.org/video/animal-facts-club-presents-endangered-rituals-bjxas7/"; target="_blank"><img src="images/animalfactsclub.jpg" style="width:100%" alt="Animal Facts Club"></a>  <center><i>Animal Facts Club</i> directed by Rachel Bardin</center>
+        <a href="https://www.pbs.org/video/animal-facts-club-presents-endangered-rituals-bjxas7/"; target="_blank">
+            <div class="container">
+            <img src="images/animalfactsclub750.jpg" style="width:100%" alt="Animal Facts Club">
+                <div class="overlay";>ANIMAL FACTS CLUB <br>Directed by Rachel Bardin</div> </div>
+                </a>  
      
-        <a href="https://cinelasamericas.org/hecho-en-tejas-claiff21/2018/autopista-norte-north-highway"; target="_blank"><img src="images/autopistanorte.jpg" style="width:100%" onclick="onClick(this)" alt="Autopista Norte directed by Andrés Torres"> </a> <center><i>Autopista Norte</i> directed by Andrés Torres</center>
+        <a href="https://cinelasamericas.org/hecho-en-tejas-claiff21/2018/autopista-norte-north-highway"; target="_blank">
+            <div class="container">
+            <img src="images/autopistanorte750.jpg" style="width:100%" onclick="onClick(this)" alt="Autopista Norte directed by Andrés Torres"> 
+                 <div class="overlay";>AUTOPISTA NORTE <br>Directed by Andrés Torres</div> </div>
+                </a> 
         
-       <a href="http://miralj.com/thelettere/index.html"; target="_blank"><img src="images/thelettere.jpg" style="width:100%" onclick="onClick(this)" alt="The Letter E directed by Mira Lippold Johnson"></a>  <center><i>The Letter E</i> directed by Mira Lippold Johnson</center>
+       <a href="http://miralj.com/thelettere/index.html"; target="_blank">
+           <div class="container">
+           <img src="images/thelettere750.jpg" style="width:100%" onclick="onClick(this)" alt="The Letter E directed by Mira Lippold Johnson">
+               <div class="overlay";>THE LETTER E <br>Directed by Mira Lippold-Johnson</div> </div>
+               </a> 
       
     </div>
     
     <div class="w3-third"> 
-        <a href="https://vimeo.com/128516477"; target="_blank"> <img src="images/nocturne.jpg" style="width:100%" onclick="onClick(this)" alt="Nocturne the search for kissing bugs in texas"></a> <center><i>Nocturne</i> directed by Rachel Bardin</center>
+        <a href="https://vimeo.com/128516477"; target="_blank"> 
+             <div class="container">
+            <img src="images/nocturne750.jpg" style="width:100%" onclick="onClick(this)" alt="Nocturne the search for kissing bugs in texas">
+                 <div class="overlay";>NOCTURNE <br>Directed by Rachel Bardin</div> </div>
+                 </a>
       
-      <a href="https://www.greatbigstory.com/stories/genesis-fellowship-ice-castle" target="_blank"> <img src="images/CastleClimber.jpg" style="width:100%" onclick="onClick(this)" alt="The Castle That Melts directed by Ed Hancox"></a><center><i>The Castle That Melts</i> directed by Ed Hancox</center>
-       <a href="https://www.flickr.com/people/77935677@N03/"; target="_blank"><img src="images/photography.jpg" style="width:100%" onclick="onClick(this)" alt="Still Photography"> </a> <center> Photography</center>
+      <a href="https://www.greatbigstory.com/stories/genesis-fellowship-ice-castle" target="_blank"> 
+          <div class="container">
+          <img src="images/icecastle750.jpg" style="width:100%" onclick="onClick(this)" alt="The Castle That Melts directed by Ed Hancox">
+              <div class="overlay";>THE CASTLE THAT MELTS <br>Directed by Ed Hancox</div> </div>
+              </a>
+        
+       <a href="https://www.flickr.com/people/77935677@N03/"; target="_blank">
+           <div class="container">
+               <img src="images/photography750.jpg" style="width:100%" onclick="onClick(this)" alt="Still Photography"> 
+               <div class="overlay";>PHOTOGRAPHY <br>by Rachel Bardin</div> </div></a>
     </div>
   </div> <div class="w3-container w3-center w3-padding-32" id="reel"><p><br><h4><center>Reel</center></h4><p>
     <iframe src="https://player.vimeo.com/video/243739043?color=58fff0&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p></div>
