@@ -25,6 +25,7 @@ h1,h2 {font-family: 'Playfair Display', serif;}
   display: block;
   width: 100%;
   height: auto;
+
 }
 
 /* The overlay effect - lays on top of the container and over the image */
@@ -69,10 +70,9 @@ h1,h2 {font-family: 'Playfair Display', serif;}
   opacity: 1;
 }
 </style></head>
-<body class="w3-content" style="max-width:1600px; background-color: #ffffe6">
-<!-- Pepperjam Verification -->
+<body class="w3-content" style="max-width:1600px; background-color: white">
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-animate-left w3-collapse w3-top w3-center" style="z-index:3;width:350px;font-weight:bold" id="mySidebar"><br>
+<nav class="w3-sidebar w3-bar-block w3-animate-left w3-collapse w3-top w3-center" style="z-index:3;width:350px;font-weight:bold" id="mySidebar"><br>
     
     <h2 class="w3-center"><b>RACHEL BARDIN</b></h2><i>Director, cinematographer</i> <br><br>
     
@@ -93,39 +93,38 @@ h1,h2 {font-family: 'Playfair Display', serif;}
 <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:400px" style="background-color: #ffffe6">
+<div class="w3-main" style="margin-left:400px" style="background-color: white">
 
   <!-- Push down content on small screens --> 
-  <div class="w3-hide-large" style="margin-top:83px" style="background-color: #ffffe6"></div>
+  <div class="w3-hide-large" style="margin-top:83px" style="background-color: white"></div>
   
   <!-- Photo grid -->
-  <div class="w3-row" style="background-color: #ffffe6"> 
+  <div class="w3-row" style="background-color: white"> 
     <div class="w3-third">
     
         <a href="https://vimeo.com/357106390">  
-          <div class="container">
+          <div class="container w3-padding">
   <img src="images/kori750.jpg" style="width:100%" alt="Kori Carter Jordan Hurdler">
             <div class="overlay";>KORI CARTER <br>Directed by Rachel Bardin</div>
           </div> </a>
     
     
         
-    
         
      <a href="https://www.huaylaw.com/"; target="_blank">
-         <div class="container">
+         <div class="container w3-padding">
          <img src="images/aswego750.jpg" style="width:100%" onclick="onClick(this)" alt="As We Go directed by Huay-Bing Law">
              <div class="overlay";>AS WE GO <br>Directed by Huay-Bing Law</div> </div>
              </a>
+        
         <a href="https://www.imdb.com/name/nm7668488/"; target="_blank">
-         <div class="container">
+         <div class="container w3-padding">
          <img src="images/Spin750.jpg" style="width:100%" onclick="onClick(this)" alt="Spin directed by Taylor Mansmann">
              <div class="overlay";>SPIN <br>Directed by Taylor Mansmann</div> </div>
              </a>
         
-        
           <a href="https://cinelasamericas.org/hecho-en-tejas-claiff21/2018/autopista-norte-north-highway"; target="_blank">
-            <div class="container">
+            <div class="container w3-padding">
             <img src="images/autopistanorte750.jpg" style="width:100%" onclick="onClick(this)" alt="Autopista Norte directed by Andrés Torres"> 
                  <div class="overlay";>AUTOPISTA NORTE <br>Directed by Andrés Torres</div> </div>
                 </a> 
@@ -133,25 +132,25 @@ h1,h2 {font-family: 'Playfair Display', serif;}
 
     <div class="w3-third">
         <a href="https://www.pbs.org/video/animal-facts-club-presents-endangered-rituals-bjxas7/"; target="_blank">
-            <div class="container">
+            <div class="container w3-padding">
             <img src="images/animalfactsclub750.jpg" style="width:100%" alt="Animal Facts Club">
                 <div class="overlay";>ANIMAL FACTS CLUB <br>Directed by Rachel Bardin</div> </div>
                 </a>  
      
       
          <a href="http://miralj.com/badthings/index.html"; target="_blank">
-         <div class="container">
+         <div class="container w3-padding">
          <img src="images/BadThings750.jpg" style="width:100%" alt="Bad Things directed by Mira Lippold-Johnson">
              <div class="overlay";>BAD THINGS <br>Directed by Mira Lippold-Johnson</div> </div>
              </a> 
        <a href="http://miralj.com/thelettere/index.html"; target="_blank">
-           <div class="container">
+           <div class="container w3-padding">
            <img src="images/thelettere750.jpg" style="width:100%" onclick="onClick(this)" alt="The Letter E directed by Mira Lippold Johnson">
                <div class="overlay";>THE LETTER E <br>Directed by Mira Lippold-Johnson</div> </div>
                </a> 
         
         <a href="https://vimeo.com/rcsbardin"; target="_blank">
-           <div class="container">
+           <div class="container w3-padding">
            <img src="images/surf750.jpg" style="width:100%" onclick="onClick(this)" alt="Experimental, surfing, and art miscellanea">
                <div class="overlay";>Experimental, surfing, and art miscellanea <br>Vimeo</div> </div>
                </a> 
@@ -160,25 +159,25 @@ h1,h2 {font-family: 'Playfair Display', serif;}
     
     <div class="w3-third"> 
         
-          <a href="lavoyger.html">  
-          <div class="container">
+          <a href="lavoyger.html" target="_top">  
+          <div class="container w3-padding">
   <img src="images/lavoyger750.jpg" style="width:100%" alt="Lavoyger quail hunting">
             <div class="overlay";>LAVOYGER <br>Directed by Rachel Bardin</div>
           </div> </a>
         <a href="https://vimeo.com/128516477"; target="_blank"> 
-             <div class="container">
+             <div class="container w3-padding">
             <img src="images/nocturne750.jpg" style="width:100%" onclick="onClick(this)" alt="Nocturne the search for kissing bugs in texas">
                  <div class="overlay";>NOCTURNE <br>Directed by Rachel Bardin</div> </div>
                  </a>
       
       <a href="https://www.greatbigstory.com/stories/genesis-fellowship-ice-castle" target="_blank"> 
-          <div class="container">
+          <div class="container w3-padding">
           <img src="images/icecastle750.jpg" style="width:100%" onclick="onClick(this)" alt="The Castle That Melts directed by Ed Hancox">
               <div class="overlay";>THE CASTLE THAT MELTS <br>Directed by Ed Hancox</div> </div>
               </a>
         
        <a href="https://www.flickr.com/people/77935677@N03/"; target="_blank">
-           <div class="container">
+           <div class="container w3-padding">
                <img src="images/photography750.jpg" style="width:100%" onclick="onClick(this)" alt="Still Photography"> 
                <div class="overlay";>PHOTOGRAPHY <br>by Rachel Bardin</div> </div></a>
     </div>
