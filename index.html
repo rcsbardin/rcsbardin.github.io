@@ -3,30 +3,36 @@
 <title>Rachel Bardin Director Cinematographer Los Angeles Florida Texas</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
 body,h3,h4,h5 {font-family: "Raleway", sans-serif}
 h1,h2 {font-family: 'Playfair Display', serif;}
+    
 
-}
-* {box-sizing: border-box}
+    
+
+.w3-animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+
+    body,h3,h4,h5 {font-family: "Raleway", sans-serif}
+h1,h2 {font-family: 'Playfair Display', serif;}
 
 /* Container needed to position the overlay. Adjust the width as needed */
 .container {
   position: relative;
   width: 100%;
-  max-width: 700px;
+    }
+    
+/* When you mouse over the container, fade in the overlay title img:hover {
+    filter: brightness(70%); 
+    } */
+.container:hover .overlay {
+  opacity: 1;
 }
 
-/* Make the image to responsive */
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-
-}
 
 /* The overlay effect - lays on top of the container and over the image */
 .overlay {
@@ -64,129 +70,98 @@ h1,h2 {font-family: 'Playfair Display', serif;}
     box-align: center;
 }
 
-
-/* When you mouse over the container, fade in the overlay title */
-.container:hover .overlay {
-  opacity: 1;
-}
-</style></head>
-<body class="w3-content" style="max-width:1600px; background-color: white">
+    </style></head>
+<body class="w3-white w3-content" style="max-width:1800px">
+    
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-bar-block w3-animate-left w3-collapse w3-top w3-center" style="z-index:3;width:350px;font-weight:bold" id="mySidebar"><br>
-    
-    <h2 class="w3-center"><b>RACHEL BARDIN</b></h2><i>Director, cinematographer</i> <br><br>
-    
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
-  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">PORTFOLIO</a>
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+      
+    <h2 class="w3-padding"><b>RACHEL BARDIN</b></h2><i class="w3-padding">Director, cinematographer</i> <br><br>
+        <div class="w3-bar-block">
+  <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">PORTFOLIO</a>
     <a href="#reel" onclick="w3_close()" class="w3-bar-item w3-button">REEL</a> 
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a> 
     <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a> 
-</nav>
-
-<!-- Top menu on small screens -->
-<header class="w3-container w3-white w3-top w3-hide-large w3-medium w3-padding-16">
-  <span class="w3-left w3-padding">RACHEL BARDIN Director, DP</span>
-  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
-</header>
-
+</div>
+    </div></nav>
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
+    
 <!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:400px" style="background-color: white">
+<div class="w3-main" style="margin-left:300px" style="background-color: white">
 
   <!-- Push down content on small screens --> 
   <div class="w3-hide-large" style="margin-top:83px" style="background-color: white"></div>
-  
-  <!-- Photo grid -->
-  <div class="w3-row" style="background-color: white"> 
-    <div class="w3-third">
     
-        <a href="https://vimeo.com/357106390">  
-          <div class="container w3-padding">
+<!-- First Photo Grid-->
+  <div class="w3-row-padding">
+      <!-- Almond Project-->
+      <div class="w3-half w3-container w3-margin-bottom">
+        <a href="https://www.theatlantic.com/sponsored/almondboard-2020/almond-farmers-are-preparing-warmer-world/3514/"; target="_blank">
+            <div class="container">
+            <img src="images/almondfoliagewalk750.jpg" style="width:100%" alt="Almond Board and Atlantic Part of the Solution Christine Gemperle"> 
+            <div class="overlay";>Atlantic + Almond Board <br><i>Part of the Solution</i> <br>Director, DP</div> </div></a></div>
+      
+      <!-- Kori Carter-->
+    <div class="w3-half w3-container w3-margin-bottom">
+        <a href="https://vimeo.com/357106390"> 
+        <div class="container">
   <img src="images/kori750.jpg" style="width:100%" alt="Kori Carter Jordan Hurdler">
-            <div class="overlay";>KORI CARTER <br>Directed by Rachel Bardin</div>
-          </div> </a>
-    
-    
+            <div class="overlay";><i>KORI CARTER</i><br>Director, DP</div> </div></a></div>
         
         
-     <a href="https://www.huaylaw.com/"; target="_blank">
-         <div class="container w3-padding">
-         <img src="images/aswego750.jpg" style="width:100%" onclick="onClick(this)" alt="As We Go directed by Huay-Bing Law">
-             <div class="overlay";>AS WE GO <br>Directed by Huay-Bing Law</div> </div>
-             </a>
-        
-        <a href="https://www.imdb.com/name/nm7668488/"; target="_blank">
-         <div class="container w3-padding">
-         <img src="images/Spin750.jpg" style="width:100%" onclick="onClick(this)" alt="Spin directed by Taylor Mansmann">
-             <div class="overlay";>SPIN <br>Directed by Taylor Mansmann</div> </div>
-             </a>
-        
-          <a href="https://cinelasamericas.org/hecho-en-tejas-claiff21/2018/autopista-norte-north-highway"; target="_blank">
-            <div class="container w3-padding">
-            <img src="images/autopistanorte750.jpg" style="width:100%" onclick="onClick(this)" alt="Autopista Norte directed by Andrés Torres"> 
-                 <div class="overlay";>AUTOPISTA NORTE <br>Directed by Andrés Torres</div> </div>
-                </a> 
     </div>
 
-    <div class="w3-third">
-        <a href="http://www.animalfactsclub.com/texasfilms"; target="_blank">
-            <div class="container w3-padding">
-            <img src="images/animalfactsclub750.jpg" style="width:100%" alt="Animal Facts Club">
-                <div class="overlay";>ANIMAL FACTS CLUB <br>Directed by Rachel Bardin</div> </div>
-                </a>  
-     
-      
-         <a href="http://miralj.com/badthings/index.html"; target="_blank">
-         <div class="container w3-padding">
-         <img src="images/BadThings750.jpg" style="width:100%" alt="Bad Things directed by Mira Lippold-Johnson">
-             <div class="overlay";>BAD THINGS <br>Directed by Mira Lippold-Johnson</div> </div>
-             </a> 
-       <a href="http://miralj.com/thelettere/index.html"; target="_blank">
-           <div class="container w3-padding">
-           <img src="images/thelettere750.jpg" style="width:100%" onclick="onClick(this)" alt="The Letter E directed by Mira Lippold Johnson">
-               <div class="overlay";>THE LETTER E <br>Directed by Mira Lippold-Johnson</div> </div>
-               </a> 
-        
-        <a href="https://vimeo.com/rcsbardin"; target="_blank">
-           <div class="container w3-padding">
-           <img src="images/surf750.jpg" style="width:100%" onclick="onClick(this)" alt="Experimental, surfing, and art miscellanea">
-               <div class="overlay";>Experimental, surfing, and art miscellanea <br>Vimeo</div> </div>
-               </a> 
-      
-    </div>
+<!-- Second Photo Grid-->
     
-    <div class="w3-third"> 
-        
-          <a href="lavoyger.html" target="_top">  
-          <div class="container w3-padding">
+<div class="w3-row-padding">
+    
+        <!-- Lavoyger-->
+    <div class="w3-half w3-container w3-margin-bottom">
+        <a href="lavoyger.html" target="_top">  
+          <div class="container"> 
   <img src="images/lavoyger750.jpg" style="width:100%" alt="Lavoyger quail hunting">
-            <div class="overlay";>LAVOYGER <br>Directed by Rachel Bardin</div>
-          </div> </a>
-        <a href="https://vimeo.com/128516477"; target="_blank"> 
-             <div class="container w3-padding">
-            <img src="images/nocturne750.jpg" style="width:100%" onclick="onClick(this)" alt="Nocturne the search for kissing bugs in texas">
-                 <div class="overlay";>NOCTURNE <br>Directed by Rachel Bardin</div> </div>
-                 </a>
-      
-      <a href="https://www.greatbigstory.com/stories/genesis-fellowship-ice-castle" target="_blank"> 
-          <div class="container w3-padding">
-          <img src="images/icecastle750.jpg" style="width:100%" onclick="onClick(this)" alt="The Castle That Melts directed by Ed Hancox">
-              <div class="overlay";>THE CASTLE THAT MELTS <br>Directed by Ed Hancox</div> </div>
-              </a>
+        <div class="overlay";><i>Lavoyger</i> <br>Director, DP</div> </div></a></div>
+    
+     <!-- Animal Facts Club-->
+    <div class="w3-half w3-container w3-margin-bottom">
+        <a href="http://www.animalfactsclub.com/texasfilms"; target="_blank">
+            <div class="container">
+            <img src="images/animalfactsclub750.jpg" style="width:100%" alt="Animal Facts Club"> 
+            <div class="overlay";><i>Animal Facts Club</i> <br>Director, Producer</div> </div></a></div>
+    
+
+    
+    <!-- Third Photo Grid-->
+        <!-- Bad Things-->
+    <div class="w3-half w3-container w3-margin-bottom">
+        <a href="http://miralj.com/badthings/index.html" target="_top">  
+          <div class="container"> 
+  <img src="images/BadThings750.jpg" style="width:100%" alt="Bad Things directed by Mira Lippold-Johnson">
+        <div class="overlay";><i>Bad Things</i> <br>Director of Photography</div> </div></a></div>
+    
+    <!-- Nocturne-->
+    <div class="w3-half w3-container w3-margin-bottom">
+        <a href="https://vimeo.com/12851647" target="_top">  
+          <div class="container"> 
+  <img src="images/nocturne750.jpg" style="width:100%" alt="Nocturne the search for kissing bugs in texas Rachel Curtis Robles">
+        <div class="overlay";><i>Nocturne</i> <br>Director, DP</div> </div></a></div>
         
-       <a href="https://www.flickr.com/people/77935677@N03/"; target="_blank">
-           <div class="container w3-padding">
-               <img src="images/photography750.jpg" style="width:100%" onclick="onClick(this)" alt="Still Photography"> 
-               <div class="overlay";>PHOTOGRAPHY <br>by Rachel Bardin</div> </div></a>
-    </div>
-  </div> <div class="w3-container w3-center w3-padding-32" id="reel"><p><br><h4><center>Reel</center></h4><p>
-    <iframe src="https://player.vimeo.com/video/243739043?color=58fff0&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p></div>
-  <!-- About section -->
+      </div>
+     <div class="w3-container w3-center" id="reel"><p><br><h4><center>Reel</center></h4><p>
+    <div class="w3-content">
+        <p>Please <a href="file:///Users/brak/Documents/GitHub/rcsbardin.github.io/index.html#contact">e-mail me </a> for a private reel of recent and unreleased work.</p> <p>Cinematography Reel 2017</p>
+        <div class="w3-center">
+    <iframe src="https://player.vimeo.com/video/243739043?color=58fff0&title=0&byline=0&portrait=0" width="750" height="422" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div></p></div>
+    <!-- About section -->
   <div class="w3-container w3-center w3-padding-32" id="about">
     <h4><b>About</b></h4>
-    <img src="images/newbio.jpg" alt="Me" class="w3-image w3-padding-32"  width="300">
+      <div class="w3-center"></div>
+      <img src="images/mesurfingkelly750.jpg" alt="Me" width="750"> </div>
     <div class="w3-content w3-justify" style="max-width:600px">
       <p>Rachel Bardin is a filmmaker and photographer. Her films have been awarded the Special Jury Prize at IFFBoston and Best Short Documentary at Flyway Film Festival, and they have screened at the Austin Film Festival, the American Society of Cinematographers, Marfa Film Festival, the American Conservation Film Festival and the PBS Online Film Festival.<br><br>
 
@@ -227,7 +202,9 @@ She splits her time between California, Texas and Florida.
   </div>
 
 <!-- End page content -->
+<!-- End page content -->
 </div>
+      </div>
 
 <script>
 // Script to open and close sidebar
