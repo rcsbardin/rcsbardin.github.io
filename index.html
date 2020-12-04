@@ -88,6 +88,12 @@ h1,h2 {font-family: 'Playfair Display', serif;}
     <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a> 
 </div>
     </div></nav>
+    
+    <!-- Top menu on small screens -->
+<header class="w3-container w3-white w3-top w3-hide-large w3-medium w3-padding-16">
+  <span class="w3-left w3-padding">RACHEL BARDIN Director, DP</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
     
@@ -98,7 +104,7 @@ h1,h2 {font-family: 'Playfair Display', serif;}
   <div class="w3-hide-large" style="margin-top:83px" style="background-color: white"></div>
     
 <!-- First Photo Grid-->
-  <div class="w3-row-padding">
+  <div class="w3-row-padding" id="portfolio">
       <!-- Almond Project-->
       <div class="w3-half w3-container w3-margin-bottom">
         <a href="https://www.theatlantic.com/sponsored/almondboard-2020/almond-farmers-are-preparing-warmer-world/3514/"; target="_blank">
@@ -156,13 +162,12 @@ h1,h2 {font-family: 'Playfair Display', serif;}
     <div class="w3-content">
         <p>Please <a href="file:///Users/brak/Documents/GitHub/rcsbardin.github.io/index.html#contact">e-mail me </a> for a private reel of recent and unreleased work.</p> <p>Cinematography Reel 2017</p>
         <div class="w3-center">
-    <iframe src="https://player.vimeo.com/video/243739043?color=58fff0&title=0&byline=0&portrait=0" width="750" height="422" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div></p></div>
+    <iframe src="https://player.vimeo.com/video/243739043?color=58fff0&title=0&byline=0&portrait=0" width="750" height="422" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div></div>
     <!-- About section -->
-  <div class="w3-container w3-center w3-padding-32" id="about">
+  <div class="w3-container w3-center" id="about">
     <h4><b>About</b></h4>
-      <div class="w3-center"></div>
-      <img src="images/mesurfingkelly750.jpg" alt="Me" width="750"> </div>
-    <div class="w3-content w3-justify" style="max-width:600px">
+
+    <div class="w3-content w3-justify" style="max-width:750px">
       <p>Rachel Bardin is a filmmaker and photographer. Her films have been awarded the Special Jury Prize at IFFBoston and Best Short Documentary at Flyway Film Festival, and they have screened at the Austin Film Festival, the American Society of Cinematographers, Marfa Film Festival, the American Conservation Film Festival and the PBS Online Film Festival.<br><br>
 
 Rachel grew up in a small Florida town of less than 300 people and found her way into filmmaking via the circuitous route of photography, surfing and writing. As a cinematographer, she thrives in verité documentary environments as well as compelling narratives, placing a high value on visually translating emotional connection with subjects and actors. <br> <br>
@@ -170,10 +175,12 @@ Rachel grew up in a small Florida town of less than 300 people and found her way
 Her fashion sense includes a very embarrasing snowsuit to film in below freezing temperatures, outrageous amounts of zinc and a pair of flippers for filming surfing, and the tragically unhip but back-saving easyrig for doing handheld with cameras that probably weren’t meant for that. From iPhones to Alexas, Rachel enjoys selecting the right tools for the story. <br><br>
 
 She splits her time between California, Texas and Florida.
-      </p>
+        </p> 
+     
+          <img src="images/mesurfingkelly750.jpg" alt="Rachel Bardin by Kelly Conway" width=100%> <br> <center>photo by Kelly Conway </center> 
       <hr class="w3-opacity">
     
-
+      </div> </div>
   <!-- Contact section -->
   <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
     <div class="w3-content" style="max-width:600px">
@@ -202,7 +209,7 @@ She splits her time between California, Texas and Florida.
   </div>
 
 <!-- End page content -->
-<!-- End page content -->
+
 </div>
       </div>
 
