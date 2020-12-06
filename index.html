@@ -69,6 +69,21 @@ h1,h2 {font-family: 'Playfair Display', serif;}
     box-pack: center;
     box-align: center;
 }
+    
+    /* Make videos fluid */ 
+    
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
     </style></head>
 <body class="w3-white w3-content" style="max-width:1800px">
@@ -161,8 +176,11 @@ h1,h2 {font-family: 'Playfair Display', serif;}
      <div class="w3-container w3-center" id="reel"><p><br><h4><center>Reel</center></h4><p>
     <div class="w3-content">
         <p>Please <a href="file:///Users/brak/Documents/GitHub/rcsbardin.github.io/index.html#contact">e-mail me </a> for a private reel of recent and unreleased work.</p> <p>Cinematography Reel 2017</p>
-        <div class="w3-center">
-    <iframe src="https://player.vimeo.com/video/243739043?color=58fff0&title=0&byline=0&portrait=0" width="750" height="422" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div></div>
+        
+        <div class="w3-center"> <div class="videoWrapper">
+    <iframe src="https://player.vimeo.com/video/243739043?color=58fff0&title=0&byline=0&portrait=0" width="750" height="422" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+        
+        </div></div>
     <!-- About section -->
   <div class="w3-container w3-center" id="about">
     <h4><b>About</b></h4>
